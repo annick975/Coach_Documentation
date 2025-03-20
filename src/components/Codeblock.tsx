@@ -10,7 +10,9 @@ export default function CodeBlock({ language, children }: CodeBlockProps) {
         {language}
       </div>
       <pre className="bg-slate-900 p-4 overflow-x-auto">
-        <code className="text-sm text-slate-200">{children}</code>
+        <code className="text-sm text-slate-200 whitespace-pre-wrap break-all md:break-normal">
+          {children}
+        </code>
       </pre>
     </div>
   );

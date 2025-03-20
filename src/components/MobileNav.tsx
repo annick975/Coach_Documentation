@@ -28,25 +28,25 @@ export default function MobileNav() {
   ];
 
   return (
-    <div className="md:hidden">
+    <div className="md:hidden w-full">
       <div className="flex items-center justify-between p-4 bg-slate-900">
-        <h1 className="text-xl font-bold text-emerald-400">GitGuardian</h1>
+        <h1 className="text-lg font-bold text-emerald-400 truncate">Coach</h1>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="text-slate-400 hover:text-slate-200"
+          className="text-slate-400 hover:text-slate-200 ml-2 flex-shrink-0"
         >
           <Menu size={24} />
         </button>
       </div>
 
       {isOpen && (
-        <nav className="bg-slate-900 p-4">
+        <nav className="bg-slate-900 p-4 w-full max-h-[70vh] overflow-y-auto">
           <ul className="space-y-2">
             {navItems.map((item) => (
               <li key={item.href}>
                 <Link
                   href={item.href}
-                  className={`block py-2 px-4 rounded-md ${
+                  className={`block py-2 px-4 rounded-md text-sm ${
                     pathname === item.href
                       ? "bg-slate-800 text-emerald-400"
                       : "text-slate-400 hover:bg-slate-800 hover:text-slate-200"

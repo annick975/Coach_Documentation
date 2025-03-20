@@ -2,20 +2,22 @@ import CodeBlock from "@/components/Codeblock";
 
 export default function Installation() {
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 max-w-full">
       <div>
-        <h1 className="text-3xl font-bold text-emerald-400 mb-2">
+        <h1 className="text-2xl md:text-3xl font-bold text-emerald-400 mb-2">
           Installation & Setup
         </h1>
-        <p className="text-slate-400">
+        <p className="text-slate-400 text-sm md:text-base">
           Follow these instructions to set up both the web and CLI versions of
           GitGuardian.
         </p>
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4">Frontend (Next.js)</h2>
-        <p className="mb-4">
+        <h2 className="text-xl md:text-2xl font-bold mb-4">
+          Frontend (Next.js)
+        </h2>
+        <p className="mb-4 text-sm md:text-base">
           The frontend is built with Next.js 14 and can be set up as follows:
         </p>
 
@@ -37,8 +39,10 @@ npm run dev`}
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4">Backend (FastAPI, Python)</h2>
-        <p className="mb-4">
+        <h2 className="text-xl md:text-2xl font-bold mb-4">
+          Backend (FastAPI, Python)
+        </h2>
+        <p className="mb-4 text-sm md:text-base">
           The backend requires Python 3.9+ and can be set up as follows:
         </p>
 
@@ -63,8 +67,8 @@ uvicorn app.main:app --reload`}
       </div>
 
       <div>
-        <h2 className="text-2xl font-bold mb-4">CLI Version</h2>
-        <p className="mb-4">
+        <h2 className="text-xl md:text-2xl font-bold mb-4">CLI Version</h2>
+        <p className="mb-4 text-sm md:text-base">
           The CLI version can be installed and used independently:
         </p>
 
@@ -85,40 +89,54 @@ gitguardian scan https://github.com/username/repository`}
         </CodeBlock>
       </div>
 
-      <div className="bg-slate-800 p-6 rounded-lg border border-slate-700">
-        <h3 className="text-xl font-bold text-emerald-400 mb-2">
+      <div className="bg-slate-800 p-4 md:p-6 rounded-lg border border-slate-700">
+        <h3 className="text-lg md:text-xl font-bold text-emerald-400 mb-2">
           Environment Variables
         </h3>
-        <p className="mb-4">
+        <p className="mb-4 text-sm md:text-base">
           Make sure to set these required environment variables:
         </p>
 
-        <table className="w-full">
-          <thead>
-            <tr className="text-left border-b border-slate-700">
-              <th className="py-2 px-4">Variable</th>
-              <th className="py-2 px-4">Description</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr className="border-b border-slate-700">
-              <td className="py-2 px-4 text-emerald-400">GEMINI_API_KEY</td>
-              <td className="py-2 px-4">
-                Your Gemini API key for AI-powered fixes
-              </td>
-            </tr>
-            <tr className="border-b border-slate-700">
-              <td className="py-2 px-4 text-emerald-400">GITHUB_TOKEN</td>
-              <td className="py-2 px-4">
-                GitHub personal access token with repo permissions
-              </td>
-            </tr>
-            <tr>
-              <td className="py-2 px-4 text-emerald-400">DATABASE_URL</td>
-              <td className="py-2 px-4">Connection string for your database</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className="overflow-x-auto -mx-4 md:mx-0">
+          <table className="w-full min-w-full table-auto">
+            <thead>
+              <tr className="text-left border-b border-slate-700">
+                <th className="py-2 px-3 md:px-4 text-xs md:text-sm">
+                  Variable
+                </th>
+                <th className="py-2 px-3 md:px-4 text-xs md:text-sm">
+                  Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-slate-700">
+                <td className="py-2 px-3 md:px-4 text-emerald-400 text-xs md:text-sm font-mono">
+                  GEMINI_API_KEY
+                </td>
+                <td className="py-2 px-3 md:px-4 text-xs md:text-sm">
+                  Your Gemini API key for AI-powered fixes
+                </td>
+              </tr>
+              <tr className="border-b border-slate-700">
+                <td className="py-2 px-3 md:px-4 text-emerald-400 text-xs md:text-sm font-mono">
+                  GITHUB_TOKEN
+                </td>
+                <td className="py-2 px-3 md:px-4 text-xs md:text-sm">
+                  GitHub personal access token with repo permissions
+                </td>
+              </tr>
+              <tr>
+                <td className="py-2 px-3 md:px-4 text-emerald-400 text-xs md:text-sm font-mono">
+                  DATABASE_URL
+                </td>
+                <td className="py-2 px-3 md:px-4 text-xs md:text-sm">
+                  Connection string for your database
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   );
