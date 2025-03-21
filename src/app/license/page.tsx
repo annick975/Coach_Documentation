@@ -8,7 +8,7 @@ export default function License() {
           License & Credits
         </h1>
         <p className="text-slate-400">
-          License information and acknowledgments for GitGuardian
+          License information and acknowledgments for Coach
         </p>
       </div>
 
@@ -16,7 +16,7 @@ export default function License() {
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">MIT License</h2>
           <p className="mb-6">
-            GitGuardian is released under the MIT License, which is a permissive
+            Coach is released under the MIT License, which is a permissive
             license that allows for free use, modification, and distribution:
           </p>
 
@@ -24,7 +24,7 @@ export default function License() {
             <CodeBlock language="text">
               {`MIT License
 
-Copyright (c) 2023 GitGuardian
+Copyright (c) 2025 Coach
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -47,7 +47,7 @@ SOFTWARE.`}
           </div>
 
           <p className="mt-4">
-            This means you are free to use GitGuardian for both personal and
+            This means you are free to use Coach for both personal and
             commercial projects, as long as you include the original copyright
             and license notice in any copy of the software or substantial
             portion of it.
@@ -57,8 +57,8 @@ SOFTWARE.`}
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Third-Party Libraries</h2>
           <p className="mb-6">
-            GitGuardian relies on many open-source libraries and frameworks.
-            Here are the main dependencies we use:
+            Coach relies on many open-source libraries and frameworks. Here are
+            the main dependencies we use:
           </p>
 
           <div className="space-y-6">
@@ -161,99 +161,6 @@ SOFTWARE.`}
                   </ul>
                 </div>
 
-                <div className="bg-slate-800 p-4 rounded-md">
-                  <h4 className="text-lg font-medium text-emerald-400 mb-2">
-                    Data Fetching & State
-                  </h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <a
-                        href="https://tanstack.com/query/latest"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        TanStack Query
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Asynchronous state management
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <a
-                        href="https://axios-http.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        Axios
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Promise-based HTTP client
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <a
-                        href="https://zustand-demo.pmnd.rs/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        Zustand
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - State management
-                      </span>
-                    </li>
-                  </ul>
-                </div>
-
-                <div className="bg-slate-800 p-4 rounded-md">
-                  <h4 className="text-lg font-medium text-emerald-400 mb-2">
-                    Code Visualization
-                  </h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <a
-                        href="https://prismjs.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        Prism.js
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Syntax highlighting
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <a
-                        href="https://github.com/FormidableLabs/react-live"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        React Live
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Live code editing
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <a
-                        href="https://react-diff-viewer.xyz/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        React Diff Viewer
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Code diff visualization
-                      </span>
-                    </li>
-                  </ul>
-                </div>
               </div>
             </div>
 
@@ -307,52 +214,7 @@ SOFTWARE.`}
                   </ul>
                 </div>
 
-                <div className="bg-slate-800 p-4 rounded-md">
-                  <h4 className="text-lg font-medium text-emerald-400 mb-2">
-                    Database & ORM
-                  </h4>
-                  <ul className="space-y-2">
-                    <li className="flex items-start">
-                      <a
-                        href="https://www.sqlalchemy.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        SQLAlchemy
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Python SQL toolkit and ORM
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <a
-                        href="https://alembic.sqlalchemy.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        Alembic
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Database migration tool
-                      </span>
-                    </li>
-                    <li className="flex items-start">
-                      <a
-                        href="https://www.postgresql.org/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-emerald-400 hover:underline"
-                      >
-                        PostgreSQL
-                      </a>
-                      <span className="text-slate-400 ml-2">
-                        - Advanced open-source database
-                      </span>
-                    </li>
-                  </ul>
-                </div>
+              
 
                 <div className="bg-slate-800 p-4 rounded-md">
                   <h4 className="text-lg font-medium text-emerald-400 mb-2">
@@ -366,10 +228,10 @@ SOFTWARE.`}
                         rel="noopener noreferrer"
                         className="text-emerald-400 hover:underline"
                       >
-                        Safety
+                        semgrep
                       </a>
                       <span className="text-slate-400 ml-2">
-                        - Python dependency vulnerability scanner
+                        - dependency to identify various languages
                       </span>
                     </li>
                     <li className="flex items-start">
@@ -426,10 +288,10 @@ SOFTWARE.`}
                         rel="noopener noreferrer"
                         className="text-emerald-400 hover:underline"
                       >
-                        LangChain
+                        tGPT
                       </a>
                       <span className="text-slate-400 ml-2">
-                        - Framework for LLM applications
+                        - Terminal GPT for CLI AI-Fixes
                       </span>
                     </li>
                   </ul>
@@ -453,9 +315,9 @@ SOFTWARE.`}
               </h3>
               <p className="text-slate-400">
                 We're deeply grateful to the entire open-source community for
-                creating and maintaining the tools and libraries that make
-                GitGuardian possible. The culture of sharing and collaboration
-                is what enables us to build on the shoulders of giants.
+                creating and maintaining the tools and libraries that make Coach
+                possible. The culture of sharing and collaboration is what
+                enables us to build on the shoulders of giants.
               </p>
             </div>
 
@@ -478,7 +340,7 @@ SOFTWARE.`}
               <p className="text-slate-400">
                 Special thanks to our early users and contributors who provided
                 valuable feedback, reported bugs, and suggested features that
-                have shaped GitGuardian into what it is today.
+                have shaped Coach into what it is today.
               </p>
             </div>
           </div>
@@ -492,9 +354,9 @@ SOFTWARE.`}
                 Trademarks
               </h3>
               <p className="text-slate-400">
-                All product names, logos, and brands mentioned in GitGuardian
-                are property of their respective owners. All company, product
-                and service names used in this website are for identification
+                All product names, logos, and brands mentioned in Coach are
+                property of their respective owners. All company, product and
+                service names used in this website are for identification
                 purposes only.
               </p>
             </div>
@@ -504,9 +366,9 @@ SOFTWARE.`}
                 Disclaimer
               </h3>
               <p className="text-slate-400">
-                GitGuardian is provided "as is", without warranty of any kind.
-                While we strive to identify security vulnerabilities accurately,
-                we cannot guarantee that all vulnerabilities will be detected or
+                Coach is provided "as is", without warranty of any kind. While
+                we strive to identify security vulnerabilities accurately, we
+                cannot guarantee that all vulnerabilities will be detected or
                 that suggested fixes will fully resolve security issues. Always
                 review AI-generated fixes carefully and test thoroughly.
               </p>
@@ -520,10 +382,10 @@ SOFTWARE.`}
                 For legal inquiries or questions about our license and terms of
                 use, please contact us at{" "}
                 <a
-                  href="mailto:legal@gitguardian.com"
+                  href="mailto:legal@coach.com"
                   className="text-emerald-400 hover:underline"
                 >
-                  legal@gitguardian.com
+                  legal@coach.com
                 </a>
                 .
               </p>

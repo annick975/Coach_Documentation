@@ -18,10 +18,9 @@ export default function MobileNav() {
     { href: "/", label: "Introduction" },
     { href: "/installation", label: "Installation & Setup" },
     { href: "/how-it-works", label: "How It Works" },
-    { href: "/api-reference", label: "API Reference" },
     { href: "/frontend-ui", label: "Frontend UI" },
     { href: "/deployment", label: "Deployment Guide" },
-    { href: "/future", label: "Future Improvements" },
+   
     { href: "/contributing", label: "Contributing Guide" },
     { href: "/troubleshooting", label: "Troubleshooting & FAQs" },
     { href: "/license", label: "License & Credits" },

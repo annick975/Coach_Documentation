@@ -1,5 +1,4 @@
 import CodeBlock from "@/components/Codeblock";
-import Image from "next/image";
 
 export default function HowItWorks() {
   return (
@@ -18,7 +17,7 @@ export default function HowItWorks() {
         <h2 className="text-2xl font-bold mb-4">Scanning Process</h2>
         <div className="space-y-4">
           <p>
-            GitGuardian uses a multi-step process to analyze repositories for
+            Coach uses a multi-step process to analyze repositories for
             security vulnerabilities:
           </p>
 
@@ -33,7 +32,7 @@ export default function HowItWorks() {
                 </h3>
               </div>
               <p className="text-slate-400">
-                GitGuardian clones the target repository to analyze its contents
+                Coach clones the target repository to analyze its contents
                 safely.
               </p>
             </div>
@@ -76,7 +75,7 @@ export default function HowItWorks() {
 
         <div className="mb-6">
           <p className="mb-4">
-            GitGuardian categorizes vulnerabilities by severity level to help
+           Coach categorizes vulnerabilities by severity level to help
             you prioritize remediation efforts:
           </p>
 
@@ -155,7 +154,7 @@ export default function HowItWorks() {
       <div>
         <h2 className="text-2xl font-bold mb-4">AI-Powered Fixes</h2>
         <p className="mb-4">
-          GitGuardian uses the Gemini API to generate intelligent fixes for
+          Coach uses the Gemini API to generate intelligent fixes for
           detected vulnerabilities:
         </p>
 
@@ -166,7 +165,7 @@ export default function HowItWorks() {
                 <h3 className="text-lg font-medium text-red-400 mb-2">
                   Vulnerable Code
                 </h3>
-                <CodeBlock language="python">
+                <CodeBlock language="Python">
                   {`def process_user_input(user_input):
     # Vulnerable code with SQL injection risk
     query = f"SELECT * FROM users WHERE username = '{user_input}'"
@@ -178,7 +177,7 @@ export default function HowItWorks() {
                 <h3 className="text-lg font-medium text-emerald-400 mb-2">
                   AI-Generated Fix
                 </h3>
-                <CodeBlock language="python">
+                <CodeBlock language="Python">
                   {`def process_user_input(user_input):
     # Using parameterized query to prevent SQL injection
     query = "SELECT * FROM users WHERE username = %s"

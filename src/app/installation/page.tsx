@@ -1,4 +1,5 @@
 import CodeBlock from "@/components/Codeblock";
+import Link from "next/link";
 
 export default function Installation() {
   return (
@@ -9,7 +10,7 @@ export default function Installation() {
         </h1>
         <p className="text-slate-400 text-sm md:text-base">
           Follow these instructions to set up both the web and CLI versions of
-          GitGuardian.
+          Coach.
         </p>
       </div>
 
@@ -17,14 +18,25 @@ export default function Installation() {
         <h2 className="text-xl md:text-2xl font-bold mb-4">
           Frontend (Next.js)
         </h2>
+        <p>
+          You can access the web-based interface of Coach{" "}
+          <Link href="" className="text-emerald-400">
+            here
+          </Link>
+          .
+        </p>
+        <br />
+        <p className="text-lg md:text-2xl font-bold mb-4">
+          If you want to run Coach locally,{" "}
+        </p>
         <p className="mb-4 text-sm md:text-base">
           The frontend is built with Next.js 14 and can be set up as follows:
         </p>
 
         <CodeBlock language="bash">
           {`# Clone the repository
-git clone https://github.com/your-org/gitguardian
-cd gitguardian/frontend
+git clone https://github.com/annick975/Coach
+cd Coach
 
 # Install dependencies
 npm install
@@ -48,7 +60,7 @@ npm run dev`}
 
         <CodeBlock language="bash">
           {`# Navigate to the backend directory
-cd gitguardian/backend
+cd Coach/backend
 
 # Create a virtual environment
 python -m venv venv
@@ -73,19 +85,23 @@ uvicorn app.main:app --reload`}
         </p>
 
         <CodeBlock language="bash">
-          {`# Install from PyPI
-pip install gitguardian-cli
+          {`# Install the CLI tool -> Clone the repository:
+git clone https://github.com/Rukundo-Bahati/Coach.git
+cd Coach/coach
 
-# Or install from source
-git clone https://github.com/your-org/gitguardian
-cd gitguardian/cli
-pip install -e .
+# Create a virtual environment:
+python3 -m venv venv_new
+source venv_new/bin/activate
 
-# Configure the CLI
-gitguardian config set api_key YOUR_API_KEY
+# Install Python dependencies:
+pip3 install .
+(Note: Ensure requirements.txt includes rich, pyfiglet, gitpython, requests, etc.)
 
-# Run a basic scan
-gitguardian scan https://github.com/username/repository`}
+# Check and install reqired tools:
+python3 coach
+
+# Analyze a repository by providing its URL and branch:
+coach https://github.com/username/repo.git main`}
         </CodeBlock>
       </div>
 

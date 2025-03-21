@@ -8,7 +8,7 @@ export default function Deployment() {
           Deployment Guide
         </h1>
         <p className="text-slate-400">
-          Learn how to deploy GitGuardian to production environments
+          Learn how to deploy Coach to production environments
         </p>
       </div>
 
@@ -16,8 +16,8 @@ export default function Deployment() {
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Frontend Deployment</h2>
           <p className="mb-6">
-            The GitGuardian frontend is built with Next.js 14 and can be
-            deployed to various hosting platforms.
+            The Coach frontend is built with Next.js 14 and can be deployed to
+            various hosting platforms.
           </p>
 
           <div className="space-y-6">
@@ -125,8 +125,8 @@ CMD ["node", "server.js"]`}
               <div className="mt-4 bg-slate-800 p-4 rounded-md">
                 <CodeBlock language="bash">
                   {`# Build and run the Docker container
-docker build -t gitguardian-frontend .
-docker run -p 3000:3000 gitguardian-frontend`}
+docker build -t coach-frontend .
+docker run -p 3000:3000 coach-frontend`}
                 </CodeBlock>
               </div>
             </div>
@@ -136,8 +136,8 @@ docker run -p 3000:3000 gitguardian-frontend`}
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Backend Deployment</h2>
           <p className="mb-6">
-            The GitGuardian FastAPI backend can be deployed on various platforms
-            that support Python applications.
+            The Coach FastAPI backend can be deployed on various platforms that
+            support Python applications.
           </p>
 
           <div className="space-y-6">
@@ -155,7 +155,7 @@ docker run -p 3000:3000 gitguardian-frontend`}
                   {`# render.yaml
 services:
   - type: web
-    name: gitguardian-api
+    name: coach-api
     env: python
     buildCommand: pip install -r requirements.txt
     startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
@@ -184,7 +184,7 @@ services:
               <div className="bg-slate-800 p-4 rounded-md">
                 <CodeBlock language="toml">
                   {`# fly.toml
-app = "gitguardian-api"
+app = "coach-api"
 primary_region = "iad"
 
 [build]
@@ -257,7 +257,7 @@ services:
       - GITHUB_CLIENT_ID=your_github_client_id
       - GITHUB_CLIENT_SECRET=your_github_client_secret
       - GEMINI_API_KEY=your_gemini_api_key
-      - DATABASE_URL=postgresql://postgres:postgres@db:5432/gitguardian
+      - DATABASE_URL=postgresql://postgres:postgres@db:5432/coach
     depends_on:
       - db
   
@@ -268,7 +268,7 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_USER=postgres
-      - POSTGRES_DB=gitguardian
+      - POSTGRES_DB=coach
 
 volumes:
   postgres_data:`}
@@ -281,7 +281,7 @@ volumes:
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Database Setup</h2>
           <p className="mb-6">
-            GitGuardian requires a database to store scan results and user data.
+            Coach requires a database to store scan results and user data.
           </p>
 
           <div className="space-y-4">
@@ -296,9 +296,9 @@ volumes:
               <div className="bg-slate-800 p-4 rounded-md">
                 <CodeBlock language="sql">
                   {`-- Initial database setup
-CREATE DATABASE gitguardian;
-CREATE USER gitguardian_user WITH PASSWORD 'secure_password';
-GRANT ALL PRIVILEGES ON DATABASE gitguardian TO gitguardian_user;`}
+CREATE DATABASE coach;
+CREATE USER coach_user WITH PASSWORD 'secure_password';
+GRANT ALL PRIVILEGES ON DATABASE coach TO coach_user;`}
                 </CodeBlock>
               </div>
             </div>
@@ -308,14 +308,14 @@ GRANT ALL PRIVILEGES ON DATABASE gitguardian TO gitguardian_user;`}
                 Database Migration
               </h3>
               <p className="mb-4">
-                GitGuardian uses Alembic for database migrations:
+                Coach uses Alembic for database migrations:
               </p>
 
               <div className="bg-slate-800 p-4 rounded-md">
                 <CodeBlock language="bash">
                   {`# Run migrations
 cd backend
-export DATABASE_URL=postgresql://gitguardian_user:secure_password@localhost/gitguardian
+export DATABASE_URL=postgresql://coach_user:secure_password@localhost/coach
 alembic upgrade head`}
                 </CodeBlock>
               </div>
