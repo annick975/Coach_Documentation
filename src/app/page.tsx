@@ -15,10 +15,10 @@ export default function Home() {
 
       <div className="space-y-4">
         <p className="text-sm md:text-base">
-          GitGuardian is a powerful cybersecurity tool that scans GitHub
-          repositories for vulnerabilities and provides AI-powered fixes using
-          the Gemini API. The tool offers both a web-based interface and a CLI
-          version for maximum flexibility.
+          Coach is a powerful cybersecurity tool that scans GitHub repositories
+          for vulnerabilities and provides AI-powered fixes using the Gemini
+          API. The tool offers both a web-based interface and a CLI version for
+          maximum flexibility.
         </p>
 
         <div className="flex flex-col md:flex-row gap-4">
@@ -27,8 +27,10 @@ export default function Home() {
               Web Interface
             </h3>
             <p className="text-slate-400 mt-2 text-sm md:text-base">
-              Scan and monitor repositories through our intuitive web-based
-              dashboard
+              Scan and monitor repositories through our intuitive web-based{" "}
+              <Link href="" className="text-emerald-400">
+                dashboard
+              </Link>
             </p>
           </div>
           <div className="bg-slate-900 p-4 md:p-6 rounded-lg flex-1">
@@ -63,19 +65,34 @@ export default function Home() {
               <li>• Python</li>
               <li>• FastAPI</li>
               <li>• Gemini API Integration</li>
+              <li>• Terminal GPT for CLI</li>
             </ul>
           </div>
         </div>
       </div>
 
       <div>
-        <h2 className="text-xl md:text-2xl font-bold mb-4">Quick Start</h2>
+        <h2 className="text-xl md:text-2xl font-bold mb-4">
+          Quick Start (CLI Guide)
+        </h2>
         <CodeBlock language="bash">
-          {`# Install the CLI tool
-pip install gitguardian-cli
+          {`# Install the CLI tool -> Clone the repository:
+git clone https://github.com/Rukundo-Bahati/Coach.git
+cd Coach/coach
 
-# Scan a repository
-gitguardian scan https://github.com/username/repository`}
+# Create a virtual environment:
+python3 -m venv venv_new
+source venv_new/bin/activate
+
+# Install Python dependencies:
+pip3 install .
+(Note: Ensure requirements.txt includes rich, pyfiglet, gitpython, requests, etc.)
+
+# Check and install reqired tools:
+python3 coach
+
+# Analyze a repository by providing its URL and branch:
+coach https://github.com/username/repo.git main`}
         </CodeBlock>
 
         <div className="mt-6">

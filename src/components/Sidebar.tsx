@@ -31,7 +31,7 @@ export default function Sidebar() {
           Coach
         </h1>
         <p className="text-xs text-slate-400 truncate">
-          Repository Security Scanner
+          GitHub Repository Security Scanner
         </p>
       </div>
       <nav>
