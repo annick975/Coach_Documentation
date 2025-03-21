@@ -18,7 +18,7 @@ export default function Troubleshooting() {
           <div className="space-y-6">
             <div className="bg-slate-800 p-4 rounded-md">
               <h3 className="text-lg font-medium text-emerald-400 mb-2">
-                "Package not found" errors during installation
+                &quot;Package not found&quot; errors during installation
               </h3>
               <p className="mb-4 text-slate-400">
                 This usually occurs when using an outdated package index or when
@@ -87,7 +87,7 @@ pip install --no-cache-dir -r requirements.txt`}
           <div className="space-y-6">
             <div className="bg-slate-800 p-4 rounded-md">
               <h3 className="text-lg font-medium text-emerald-400 mb-2">
-                "Failed to connect to API" error
+                &quot;Failed to connect to API&quot; error
               </h3>
               <p className="mb-4 text-slate-400">
                 This error occurs when the frontend cannot communicate with the
@@ -159,11 +159,11 @@ curl -H "Authorization: token YOUR_GITHUB_TOKEN" https://api.github.com/rate_lim
                     Verify your API key is valid and has sufficient permissions
                   </li>
                   <li>
-                    Check that you're using the correct endpoint for the Gemini
-                    API
+                    Check that you&apos;re using the correct endpoint for the
+                    Gemini API
                   </li>
                   <li>
-                    Ensure your prompts don't violate any content policies
+                    Ensure your prompts don&apos;t violate any content policies
                   </li>
                 </ul>
                 <CodeBlock language="python">
@@ -223,7 +223,7 @@ coach scan --incremental`}
                 Too many false positives
               </h3>
               <p className="mb-4 text-slate-400">
-                The scanner may sometimes flag code that isn't actually
+                The scanner may sometimes flag code that isn&apos;t actually
                 vulnerable.
               </p>
               <div className="space-y-3">
@@ -251,7 +251,7 @@ exclude_patterns:
 
             <div className="bg-slate-800 p-4 rounded-md">
               <h3 className="text-lg font-medium text-emerald-400 mb-2">
-                Scan fails with "Out of memory" error
+                Scan fails with &quot;Out of memory&quot; error
               </h3>
               <p className="mb-4 text-slate-400">
                 Very large repositories or files can exceed the available memory
@@ -325,10 +325,10 @@ coach scan --max-file-size=10MB`}
               <div className="text-slate-400">
                 <p>
                   Yes, Coach works with both public and private repositories.
-                  For private repositories, you'll need to provide appropriate
-                  GitHub authentication credentials. We recommend using a GitHub
-                  App or personal access token with the minimal permissions
-                  required.
+                  For private repositories, you&apos;ll need to provide
+                  appropriate GitHub authentication credentials. We recommend
+                  using a GitHub App or personal access token with the minimal
+                  permissions required.
                 </p>
               </div>
             </div>
@@ -391,8 +391,8 @@ exclude:
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Getting Additional Help</h2>
           <p className="mb-6">
-            If you're still experiencing issues, there are several ways to get
-            help:
+            If you&apos;re still experiencing issues, there are several ways to
+            get help:
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -423,8 +423,6 @@ exclude:
                 Open an Issue
               </a>
             </div>
-
-        
 
             <div className="bg-slate-800 p-4 rounded-md">
               <h3 className="text-lg font-medium text-emerald-400 mb-2">

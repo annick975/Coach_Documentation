@@ -16,8 +16,8 @@ export default function Contributing() {
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Getting Started</h2>
           <p className="mb-6">
-            We welcome contributions from developers of all skill levels. Here's
-            how to get started:
+            We welcome contributions from developers of all skill levels.
+            Here&apos;s how to get started:
           </p>
 
           <div className="space-y-4">
@@ -210,8 +210,9 @@ chore: update dependencies`}
                 1. Keep PRs Focused
               </h3>
               <p className="text-slate-400">
-                Each pull request should address a single concern. Don't combine
-                multiple features or fixes unless they're closely related.
+                Each pull request should address a single concern. Don&apos;t
+                combine multiple features or fixes unless they&apos;re closely
+                related.
               </p>
             </div>
 
@@ -338,8 +339,6 @@ configure(api_key=api_key)`}
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-           
-
             <div className="bg-slate-800 p-4 rounded-md">
               <h3 className="text-lg font-medium text-emerald-400 mb-2">
                 Open an Issue

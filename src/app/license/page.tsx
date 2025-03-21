@@ -160,7 +160,6 @@ SOFTWARE.`}
                     </li>
                   </ul>
                 </div>
-
               </div>
             </div>
 
@@ -213,8 +212,6 @@ SOFTWARE.`}
                     </li>
                   </ul>
                 </div>
-
-              
 
                 <div className="bg-slate-800 p-4 rounded-md">
                   <h4 className="text-lg font-medium text-emerald-400 mb-2">
@@ -304,7 +301,7 @@ SOFTWARE.`}
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">Special Thanks</h2>
           <p className="mb-6">
-            We'd like to express our gratitude to the following people and
+            We&apos;d like to express our gratitude to the following people and
             organizations:
           </p>
 
@@ -314,9 +311,9 @@ SOFTWARE.`}
                 Open Source Community
               </h3>
               <p className="text-slate-400">
-                We're deeply grateful to the entire open-source community for
-                creating and maintaining the tools and libraries that make Coach
-                possible. The culture of sharing and collaboration is what
+                We&apos;re deeply grateful to the entire open-source community
+                for creating and maintaining the tools and libraries that make
+                Coach possible. The culture of sharing and collaboration is what
                 enables us to build on the shoulders of giants.
               </p>
             </div>
@@ -366,11 +363,12 @@ SOFTWARE.`}
                 Disclaimer
               </h3>
               <p className="text-slate-400">
-                Coach is provided "as is", without warranty of any kind. While
-                we strive to identify security vulnerabilities accurately, we
-                cannot guarantee that all vulnerabilities will be detected or
-                that suggested fixes will fully resolve security issues. Always
-                review AI-generated fixes carefully and test thoroughly.
+                Coach is provided &quot;as is&quot;, without warranty of any
+                kind. While we strive to identify security vulnerabilities
+                accurately, we cannot guarantee that all vulnerabilities will be
+                detected or that suggested fixes will fully resolve security
+                issues. Always review AI-generated fixes carefully and test
+                thoroughly.
               </p>
             </div>
 

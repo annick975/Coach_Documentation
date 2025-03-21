@@ -1,5 +1,4 @@
 import CodeBlock from "@/components/Codeblock";
-import Image from "next/image";
 
 export default function FrontendUI() {
   return (
@@ -9,7 +8,7 @@ export default function FrontendUI() {
           Frontend UI
         </h1>
         <p className="text-slate-400">
-          Overview of Coach's web interface features and components
+          Overview of Coach&apos;s web interface features and components
         </p>
       </div>
 
@@ -18,7 +17,7 @@ export default function FrontendUI() {
           <h2 className="text-2xl font-bold mb-4">Dashboard Overview</h2>
           <p>
             The Coach dashboard is designed for clarity and ease of use,
-            providing a comprehensive view of your repositories' security
+            providing a comprehensive view of your repositories&apos; security
             status.
           </p>
 
@@ -191,7 +190,7 @@ export default function FrontendUI() {
         <div className="bg-slate-900 p-6 rounded-lg">
           <h2 className="text-2xl font-bold mb-4">User Experience</h2>
           <p className="mb-6">
-            Coach's frontend is designed with user experience as a
+            Coach&apos;s frontend is designed with user experience as a
             priority, offering intuitive navigation and clear visualizations.
           </p>
 
