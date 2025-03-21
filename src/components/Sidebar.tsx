@@ -28,7 +28,7 @@ export default function Sidebar() {
     <div className="hidden md:block w-64 h-screen bg-slate-900 p-6 fixed overflow-y-auto overflow-x-hidden">
       <div className="mb-6">
         <h1 className="text-xl font-bold text-emerald-400 truncate">
-          GitGuardian
+          Coach
         </h1>
         <p className="text-xs text-slate-400 truncate">
           Repository Security Scanner

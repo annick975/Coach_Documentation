@@ -6,9 +6,9 @@ import MobileNav from "@/components/MobileNav";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "GitGuardian Docs",
+  title: "Coach Docs",
   description:
-    "Documentation for GitGuardian - GitHub Repository Security Scanner",
+    "Documentation for Coach - GitHub Repository Security Scanner",
 };
 
 export default function RootLayout({
@@ -18,6 +18,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
+      
       <head>
         <meta
           name="viewport"

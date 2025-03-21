@@ -6,7 +6,7 @@ export default function Home() {
     <div className="space-y-8 max-w-full overflow-hidden">
       <div className="space-y-2">
         <h1 className="text-3xl md:text-4xl font-bold text-emerald-400">
-          GitGuardian
+          Coach
         </h1>
         <p className="text-lg md:text-xl text-slate-400">
           GitHub Repository Security Scanner
